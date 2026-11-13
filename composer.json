@@ -1,0 +1,9 @@
+{
+    "name": "trinityrobinson/nook32_pos",
+    "description": "Nook32 Coffee POS and Management System",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {}
+}
+ 
