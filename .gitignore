@@ -1,0 +1,33 @@
+# Environment & Database Credentials
+config/database.php
+config/test_database.php
+.env
+.env.*
+
+# Plaintext User Provisioning Scripts
+create_admin.php
+create_cashier.php
+
+# Backups & Temp files
+*.backup
+*.bak
+*_backup.php
+*.log
+cookies*.txt
+checkout_*.json
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+__MACOSX/
+
+# Dependencies & IDE
+vendor/
+.idea/
+.vscode/
+*.swp
