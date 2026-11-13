@@ -1,0 +1,20 @@
+<?php
+/**
+ * Nook32 POS Database Configuration Template
+ * Copy this file to config/database.php and update with your local database credentials.
+ */
+
+// Application Timezone
+date_default_timezone_set('Asia/Manila');
+
+// Database Connection Parameters
+$host     = getenv('DB_HOST') ?: "localhost";
+$username = getenv('DB_USER') ?: "root";
+$password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : "";
+$database = getenv('DB_NAME') ?: "nook32_pos";
+
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+$conn = new mysqli($host, $username, $password, $database);
+$conn->set_charset("utf8mb4");
+$conn->query("SET time_zone = '+08:00'");
